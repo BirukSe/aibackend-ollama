@@ -4,6 +4,11 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "nodemon": "^3.1.7",
-    "ollama": "^0.5.10"
+    "ollama": "^0.5.10",
+    "ollama-cli": "^1.6.1"
+  },
+  "scripts": {
+    "postinstall": "npx ollama pull llama3.2",
+    "start": "node index.js"
   }
 }
